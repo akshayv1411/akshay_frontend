@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form</title>
+</head>
+<body>
+<center>
+<h1>Docter Appointment Form</h1>
+ <hr style="width:60%;border:1px solid red">
+
+<form action="#">
+<table cellspacing="10" cellpadding="5">
+<tr>
+<td>
+<label for="date">Appointment Date</label>
+</td>
+<td>
+<input type="date" name="date" id="date">
+</td>
+</tr>
+
+<tr>
+<td>
+<label for="time">Appointment time</label>
+</td>
+<td>
+<input type="time" name="time" id="time">
+</td>
+</tr>
+
+<tr>
+<td>
+<label for="name">Name</label>
+</td>
+<td>
+<input type="text" name="name" id="name" placeholder="First">
+<input type="text" name="name" id="name" placeholder="Last">
+</td>
+</tr>
+
+<tr>
+<td>
+<label for="time">Gender</label>
+</td>
+<td>
+<input type="radio" name="gender" id="gender">Male
+<input type="radio" name="gender" id="gender">Female
+</td>
+</tr>
+
+<tr>
+<td>
+<label for="phn">Phone number</label>
+</td>
+<td>
+<input type="tel" name="phn" id="phn" placeholder="######">
+</td>
+</tr>
+
+<tr>
+<td>
+<label for="adr">Address</label>
+</td>
+<td>
+<input type="text" name="adr" id="adr" placeholder="city">
+
+<input type="text" name="adr" id="adr" placeholder="state">
+</td>
+</tr>
+
+<tr>
+<td>
+<label for="qry">Your Query</label>
+</td>
+<td>
+<textarea name="qry" id="qry" rows=3></textarea>
+</td>
+</tr>
+
+<tr>
+<td>
+<label for="op">Appointment type</label>
+</td>
+<td>
+Select which option type(s) you require <br>
+<input type="checkbox" name="op" id="op">Cervix checkup <br>
+<input type="checkbox" name="op" id="op">Heart checkup <br>
+<input type="checkbox" name="op" id="op">Eye checkup <br>
+<input type="checkbox" name="op" id="op">Hearing Test <br>
+</tr>
+
+<tr>
+<td colspan=2" align="center">
+<button type="button">send</button>
+</td>
+</tr>
+
+</table>
+</form>
+
+</center>
+</body>
+</html>

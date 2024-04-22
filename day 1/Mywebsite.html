@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        header {
+            background-color: #160e0e;
+            color: #eeecec;
+            padding: 20px 0;
+        }
+
+        .container-1 {
+            max-width: 100%;
+            / margin: 0 auto;/ padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .heading {
+            font-size: 2em;
+            font-weight: 700;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav {}
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav li {
+            display: inline-block;
+            margin-left: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: rgb(246, 244, 244);
+        }
+
+        main {
+            padding: 20px 0;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            padding: 5px;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2px;
+            / justify-content: space-between;/ / justify-content: space-evenly;/
+        }
+
+        .card {
+            width: 32%;
+            background-color: #f1f1f1;
+            margin-bottom: 20px;
+            border: 3px solid black;
+            / padding: 20px;/
+        }
+
+        .card h3 {
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+
+        .card-para {
+            padding: 15px;
+        }
+
+        footer {
+            background-color: #f1f1f1;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .main-container {
+            display: flex;
+
+
+        }
+
+        .sidebar {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            width: 1400px;
+            margin: 0 10px;
+        }
+
+        .card-header {
+            background-color: #333;
+            color: white;
+            font-size: 20px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container-1">
+            <i class="heading">My Website</i>
+            <nav>
+                <ul>
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="main-container">
+            <div class="container">
+                <h2>This is the main heading</h2>
+                <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi
+                    tomatillo melon azuki bean garlic.</p>
+                <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava
+                    bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko
+                    zucchini.</p>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Card One</h3>
+                        </div>
+                        <p class="card-para">Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce
+                            kohlrabi amaranth water spinach avocado.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Card Two</h3>
+                        </div>
+                        <p class="card-para">Daikon napa cabbage asparagus lotus root water spinach fennel kombu maize
+                            bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Card Three</h3>
+                        </div>
+                        <p class="card-para">Nori grape silver beet broccoli kombu beet greens fava bean potato quandong
+                            celery bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Card Four</h3>
+                        </div>
+                        <p class="card-para">Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce
+                            kohlrabi amaranth water spinach avocado.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Card Five</h3>
+                        </div>
+                        <p class="card-para">Nori grape silver beet broccoli kombu beet greens fava bean potato quandong
+                            celery bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar">
+                <p>Here you discovered all of other excellent content in the website.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My Website</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Placeholder Below Label</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .bg-baby-pink {
+      background-color: #f4cccc;
+    }
+    .custom-margin {
+      margin-bottom: 1rem; 
+    }
+    .custom-margin label {
+      display: block;
+    }
+    .custom-margin input::placeholder {
+      position: relative; 
+      top: 0;
+    }
+    .form-control {
+      width: 450px;
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    .white-bg {
+      background-color: white;
+    }
+
+    .btn-rounded {
+      border-radius: 20px;
+      width: 400px; 
+
+    .center-vertical {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%; 
+    }
+  </style>
+</head>
+<body class="bg-baby-pink">
+  <h1 class="text-center mt-4">Connect With Our Digital Marketing Experts</h1>
+  <h4 class="text-center mb-4"><span style="font-weight: normal;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis adipisci voluptate eveniet quasi molestiae blanditiis unde similique, illum consequuntur recusandae.</span></h4> 
+    
+  <div class="container mt-5">
+    <div class="border p-4 rounded white-bg">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="NameInput">Name</label>
+            <input type="text" class="form-control" id="NameInput" placeholder="Enter your name">
+          </div>
+          <div class="form-group">
+            <label for="Phone">Phone</label>
+            <input type="tel" class="form-control" id="Phone" placeholder="Enter your Phone number">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your Email">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="Message">Message</label>
+            <textarea class="form-control" id="Message" rows="5" placeholder="Enter your message" style="resize: none;"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4 center-vertical">
+        <button type="button" class="btn btn-primary btn-rounded">Get Started</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
