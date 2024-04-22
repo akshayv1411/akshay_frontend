@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar Example</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Bootstrap Icons (optional) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css " rel="stylesheet">
+  <style>
+ 
+    .form-check-input[type="checkbox"] {
+      width: 20px; / Adjust width as needed /
+      height: 20px; 
+    }
+
+    .dropdown-dot {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    .dot {
+      width: 4px;
+      height: 4px;
+      background-color: #000;
+      border-radius: 50%;
+      margin: 2px 0;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 120px;
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-dot:hover .dropdown-content {
+      display: block;
+    }
+
+    .calendar-label::after {
+      content: 'dd/mm/yyyy';
+      color: gray;
+      margin-left: 5px;
+    }
+
+    .dropdown-item-text {
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" style="color: rgb(161, 109, 12);">Banners</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">From date : <i class="bi bi-calendar"></i><span class="calendar-label"></span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">To date : <i class="bi bi-calendar"></i><span class="calendar-label"></span></a>
+      </li>
+    </ul>
+  </div>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <button class="btn btn-primary" style="background-color: brown;">Create Banners</button>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<table class="table">
+  <thead>
+    <tr>
+      <!-- Change in CSS -->
+      <th scope="col">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault"></label>
+        </div>
+      </th>
+      <th scope="col">Banner Image</th>
+      <th scope="col">Customer panel</th>
+      <th scope="col">Display page</th>
+      <th scope="col">Navigation page URL</th>
+      <th scope="col">Button</th>
+      <th scope="col">Created date and time</th>
+      <th scope="col">Start date and time</th>
+      <th scope="col">End date and time</th>
+      <th scope="col">Status</th>
+      <th scope="col">action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+          <label class="form-check-label" for="flexCheckDefault1"></label>
+        </div>
+      </th>
+      <td></td>
+      <td>Reseller</td>
+      <td>Home Page</td>
+      <td>------</td>
+      <td>Shop-now</td>
+      <td>23/06/2022 - 10.54</td>
+      <td>23/06/2022 - 10.54</td>
+      <td>23-06-2022 - 10.54</td>
+      <td>--</td>
+      <td>
+        <div class="dropdown-dot">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dropdown-content">
+            <a href="#" class="dropdown-item-text">View</a>
+            <a href="#" class="dropdown-item-text">Edit</a>
+            <a href="#" class="dropdown-item-text">Delete</a>
+          </div>
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <th scope="row"></th>
+      <td></td>
+      <td>Customer</td>
+      <td>Apparels</td>
+      <td></td>
+      <td>Buy now</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>--</td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <th scope="row"></th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>--</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
